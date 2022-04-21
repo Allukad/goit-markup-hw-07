@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Нормализатор -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <!-- Шрифты -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Кастомные стили -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>portfolio</title>
+  </head>
+  <!-- Контент -->
+  <body>
+    <!-- Портфолио Шапка -->
+    <header class="header">
+      <div class="container head-container">
+        <!-- Лого -->
+        <a class="logo head-logo" href="./index.html"
+          >Web<span class="logo-head-studio">Studio</span></a
+        >
+        <!-- Навигация -->
+        <nav class="header-navigation">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="./index.html">Студия</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link nav-main" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Контакты -->
+        <ul class="header-contacts">
+          <li class="contacts-item">
+            <a class="contacts-link" href="mailto:info@devstudio.com"
+              ><svg class="icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              <span class="contacts-text">info@devstudio.com</span></a
+            >
+          </li>
+          <li class="conyacts-item">
+            <a class="contacts-link" href="tel:+380961111111">
+              <svg class="icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              <span class="contacts-text">+38 096 111 11 11</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Портфолио Главная -->
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="hidden-title">Наши проекты</h1>
+          <!-- Портфолио фильтры -->
+          <ul class="portf-filter-list">
+            <li class="portf-filter-item">
+              <button class="button filter-button">Все</button>
+            </li>
+            <li class="portf-filter-item">
+              <button class="button filter-button">Веб-сайты</button>
+            </li>
+            <li class="portf-filter-item">
+              <button class="button filter-button">Приложения</button>
+            </li>
+            <li class="portf-filter-item">
+              <button class="button filter-button">Дизайн</button>
+            </li>
+            <li class="portf-filter-item">
+              <button class="button filter-button">Маркетинг</button>
+            </li>
+          </ul>
+          <!-- Портфолио проекты -->
+          <ul class="portf-project-list">
+            <li class="portf-project-item">             
+              <a href="" class="portf-project-link">
+                <div class="portf-thumb">
+                  <img
+                    src="./images/portfolio-img/portf-1.jpg"
+                    alt="Технокряк"
+                    width="370px"
+                    height="294px"
+                  />
+                  <p class="portf-view-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; о компании или частном лице.
+                  </p>
+                </div>
+                <div class="portf-text-box">
+                  <h2 class="portf-project-name">Технокряк</h2>
+                  <p class="portf-project-class">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="portf-project-item">
+              <a href="" class="portf-project-link">
+                <div class="portf-thumb">
+                <img
+                class="portf-img"
+                src="./images/portfolio-img/portf-2.jpg"
+                alt="Постер New Orlean vs Golden Star"
+                width="370px"
+                height="294px"
+              />
+              <p class="portf-view-text"></p>
+            </div>
+                <div class="portf-text-box">
+                  <h2 class="portf-project-name">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="portf-project-class">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="portf-project-item">
+              <a href="" class="portf-project-link">
+                <div class="portf-thumb">
+                <img
+                class="portf-img"
+                src="./images/portfolio-img/portf-3.jpg"
+                alt="Ресторан Seafood"
+                width="370px"
+                height="294px"
+              />
+              
+                <p class="portf-view-text"></p>
+              </div>
+                <div class="portf-text-box">
+                  <h2 class="portf-project-name">Ресторан Seafood</h2>
+                  <p class="portf-project-class">Приложение</p>
+                </div></a
+              >
+            </li>
+            <li class="portf-project-item">
+              <a href="" class="portf-project-link">
+                <div class="portf-thumb">
+                <img
+                class="portf-img"
+                src="./images/portfolio-img/portf-4.jpg"
+                alt="Проект Prime"
+                width="370px"
+                height="294px"
+              />
+              
+                <p class="portf-view-text"></p>
+              </div>
+                <div class="portf-text-box">
+                  <h2 class="portf-project-name">Проект Prime</h2>
+                  <p class="portf-project-class">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="portf-project-item">
+             <a href="" class="portf-project-link">
+              <div class="portf-thumb">
+              <img
+              class="portf-img"
+              src="./images/portfolio-img/portf-5.jpg"
+              alt="Проект Boxes"
+              width="370px"
+              height="294px"
+            />
+            
+              <p class="portf-view-text"></p>
+            </div>
+                <div class="portf-text-box">
+                  <h2 class="portf-project-name">Проект Boxes</h2>
+                  <p class="portf-project-class">Приложение</p>
+                </div></a
+              >
+            </li>
+            <li class="portf-project-item">
+              <a href="" class="portf-project-link">
+                <div class="portf-thumb">
+                <img
+                class="portf-img"
+                src="./images/portfolio-img/portf-6.jpg"
+                alt="Inspiration has no Borders"
+                width="370px"
+                height="294px"
+              />
+              
+                <p class="portf-view-text"></p>
+              </div>
+                <div class="portf-text-box">
+                  <h2 class="portf-project-name">Inspiration has no Borders</h2>
+                  <p class="portf-project-class">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="portf-project-item">
+              <a href="" class="portf-project-link">
+                <div class="portf-thumb">
+                <img
+                class="portf-img"
+                src="./images/portfolio-img/portf-7.jpg"
+                alt="Издание Limited Edition"
+                width="370px"
+                height="294px"
+              />
+              
+                <p class="portf-view-text"></p>
+              </div>
+                <div class="portf-text-box">
+                  <h2 class="portf-project-name">Издание Limited Edition</h2>
+                  <p class="portf-project-class">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="portf-project-item">
+              <a href="" class="portf-project-link">
+                <div class="portf-thumb">
+                <img
+                class="portf-img"
+                src="./images/portfolio-img/portf-8.jpg"
+                alt="Проект LAB"
+                width="370px"
+                height="294px"
+              />
+                <p class="portf-view-text"></p>
+              </div>
+                <div class="portf-text-box">
+                  <h2 class="portf-project-name">Проект LAB</h2>
+                  <p class="portf-project-class">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="portf-project-item">
+              <a href="" class="portf-project-link">
+                <div class="portf-thumb">
+                <img
+                class="portf-img"
+                src="./images/portfolio-img/portf-9.jpg"
+                alt="Growing Business"
+                width="370px"
+                height="294px"
+              />
+                <p class="portf-view-text"></p>
+              </div>
+                <div class="portf-text-box">
+                  <h2 class="portf-project-name">Growing Business</h2>
+                  <p class="portf-project-class">Приложение</p>
+                </div></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Портфолио подвал -->
+    <footer class="footer">
+      <div class="container footer-box">
+        <!-- Лого -->
+        <div>
+        <a class="logo" href="./index.html"
+          >Web<span class="logo-foot-studio">Studio</span></a
+        >
+        <!-- Адрес и контакты -->
+        <address class="adress-box">
+          <ul class="adress-list">
+            <li class="adress-item">
+              <a
+                class="address-map"
+                href="https://goo.gl/maps/QXmDGy41mX6i24PM6"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="adress-item">
+              <a class="address-cont" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="adress-item">
+              <a class="address-cont" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+        </div>
+        <!-- Наши соц. сети -->
+        <div class="foot-soc-box">
+          <h3 class="foot-soc-title">присоединяйтесь</h3>
+        <ul class="social-foot-list">
+                <li class="social-item">
+                  <a class="social-foot-link" href="">
+                    <svg class="icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-foot-link" href="">
+                    <svg class="icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-foot-link" href="">
+                    <svg class="icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-foot-link" href="">
+                    <svg class="icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+        </div>
+        <div class="footer-sub-box">
+          <h3 class="footer-sub-title">Подпишитесь на рассылку</h3>
+          <form name="subscribe-form" class="footer-subscribe" autocomplete="on">
+            <label class="footer-label">
+              <input type="email" name="subscribe-email" class="footer-input" placeholder="E-mail">
+            </label>
+            <button class="button subscribe-btn" tipe="submit">Подписаться
+              <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
