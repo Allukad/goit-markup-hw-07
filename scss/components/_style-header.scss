@@ -1,0 +1,96 @@
+/* Стили Шапки */
+.header {
+    display: flex;
+    height: 80px;
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+  }
+  .header__container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Шапка Навигация */
+  .site-navigation__list {
+    display: flex;
+    padding-left: 0px;
+    margin: 0px;
+  }
+  .site-navigation__item {
+    margin-right: 50px;
+  }
+  .site-navigation__item:last-child {
+    margin-right: 0px;
+  }
+  .site-navigation__link {
+    display: block;
+    position: relative;
+    padding: 32px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+    transition: color var(--anim-fast);
+  }
+  .site-navigation__link::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background-color: var(--hover-color);
+    transition: width var(--anim-fast);
+    border-radius: 2px;
+  }
+  .site-navigation__link:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  .site-navigation__link:hover,
+  .site-navigation__link:focus {
+    color: var(--hover-color);
+  }
+  .site-navigation__main {
+    color: var(--hover-color);
+  }
+  .site-navigation__main::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--hover-color);
+    border-radius: 2px;
+  }
+  /* Шапка Контакты */
+  .head-contacts {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin-left: auto;
+  }
+  .head-contacts__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .head-contacts__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    color: var(--sec-color);
+    transition: color var(--anim-fast);
+  }
+  .head-contacts .icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+  .head-contacts__link:hover,
+  .head-contacts__link:focus {
+    color: var(--hover-color);
+  }
