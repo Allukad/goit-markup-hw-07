@@ -44,10 +44,10 @@
   }
   .modal__close-btn .icon {
     fill: currentColor;
-  }
-  .modal__close-btn:hover,
-  .modal__close-btn:focus {
-    color: var(--hover-color);
+    &:hover,
+    &:focus {
+      color: var(--hover-color);
+    }
   }
   .modal__title {
     width: 100%;
@@ -171,10 +171,10 @@
   line-height: 1.875;
   letter-spacing: 0.06em;
   transition: background-color var(--anim-fast);
-  }
-  .modal__signup-btn:hover,
-  .modal__signup-btn:focus {
+  &:hover,
+  &:focus {
     background-color: #188CE8;
+  }
   }
   .modal__input-box:focus-within{
     color: var(--hover-color);

@@ -137,12 +137,8 @@ img {
   margin: 0px;
 }
 
-.site-navigation__item {
+.site-navigation__item:not(:last-child) {
   margin-right: 50px;
-}
-
-.site-navigation__item:last-child {
-  margin-right: 0px;
 }
 
 .site-navigation__link {
@@ -177,16 +173,15 @@ img {
   left: 0;
 }
 
-.site-navigation__link:hover,
-.site-navigation__link:focus {
+.site-navigation__link:hover, .site-navigation__link:focus {
   color: var(--hover-color);
 }
 
-.site-navigation__main {
+.site-navigation__link--current {
   color: var(--hover-color);
 }
 
-.site-navigation__main::after {
+.site-navigation__link--current::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -230,14 +225,13 @@ img {
   transition: color var(--anim-fast);
 }
 
+.head-contacts__link:hover, .head-contacts__link:focus {
+  color: var(--hover-color);
+}
+
 .head-contacts .icon {
   fill: currentColor;
   margin-right: 10px;
-}
-
-.head-contacts__link:hover,
-.head-contacts__link:focus {
-  color: var(--hover-color);
 }
 
 /* Заказать услугу */
@@ -284,7 +278,7 @@ img {
 }
 
 /* Почему мы */
-.whyme__list {
+.whyme {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,7 +312,7 @@ img {
   margin-bottom: 30px;
 }
 
-.whyme__item-title {
+.whyme__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -335,11 +329,11 @@ img {
 }
 
 /* Чем занимаемся */
-.whatdo {
+.section-p-top0 {
   padding-top: 0px;
 }
 
-.whatdo__title {
+.section__wd-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -348,7 +342,7 @@ img {
   margin-bottom: 50px;
 }
 
-.whatdo__list {
+.whatdo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,11 +384,11 @@ img {
 }
 
 /* Наша команда */
-.team {
+.section-t-bg {
   background-color: #f5f4fa;
 }
 
-.team__title {
+.section__t-title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -404,7 +398,7 @@ img {
   color: var(--main-color);
 }
 
-.team__list {
+.team {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -430,7 +424,7 @@ img {
   margin-right: 30px;
 }
 
-.team__name {
+.team__title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -463,8 +457,7 @@ img {
   transition: color var(--anim-fast), background-color var(--anim-fast);
 }
 
-.team__social-link:hover,
-.team__social-link:focus {
+.team__social-link:hover, .team__social-link:focus {
   color: #ffffff;
   background-color: var(--hover-color);
 }
@@ -516,8 +509,7 @@ img {
   transition: color var(--anim-fast), border var(--anim-fast);
 }
 
-.our-clients__link:hover,
-.our-clients__link:focus {
+.our-clients__link:hover, .our-clients__link:focus {
   color: var(--hover-color);
   border: 1px solid var(--hover-color);
 }
@@ -557,8 +549,7 @@ img {
   transition: color var(--anim-fast), background-color var(--anim-fast), box-shadow var(--anim-fast), -webkit-box-shadow var(--anim-fast);
 }
 
-.filter__button:hover,
-.filter__button:focus {
+.filter__button:hover, .filter__button:focus {
   background-color: var(--hover-color);
   color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -622,6 +613,17 @@ img {
   transition: box-shadow var(--anim-fast), -webkit-box-shadow var(--anim-fast);
 }
 
+.project__link:focus .project__text-box,
+.project__link:hover .project__text-box {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project__link:hover .project__view-text {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .project__view-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -650,17 +652,6 @@ img {
   transition: -webkit-transform var(--anim-fast);
   transition: transform var(--anim-fast);
   transition: transform var(--anim-fast), -webkit-transform var(--anim-fast);
-}
-
-.project__link:focus .project__text-box,
-.project__link:hover .project__text-box {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.project__link:hover .project__view-text {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 /* Стили Подвала */
@@ -752,8 +743,7 @@ img {
   transition: color var(--anim-fast), background-color var(--anim-fast);
 }
 
-.foot-social__link:hover,
-.foot-social__link:focus {
+.foot-social__link:hover, .foot-social__link:focus {
   color: #ffffff;
   background-color: var(--hover-color);
 }
@@ -889,8 +879,7 @@ img {
   fill: currentColor;
 }
 
-.modal__close-btn:hover,
-.modal__close-btn:focus {
+.modal__close-btn .icon:hover, .modal__close-btn .icon:focus {
   color: var(--hover-color);
 }
 
@@ -1073,8 +1062,7 @@ img {
   transition: background-color var(--anim-fast);
 }
 
-.modal__signup-btn:hover,
-.modal__signup-btn:focus {
+.modal__signup-btn:hover, .modal__signup-btn:focus {
   background-color: #188CE8;
 }
 

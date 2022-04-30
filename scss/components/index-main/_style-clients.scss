@@ -25,12 +25,13 @@
     border: 1px solid #afb1b8;
     border-radius: 4px;
     transition: color var(--anim-fast), border var(--anim-fast);
-  }
-  .our-clients__link:hover,
-  .our-clients__link:focus {
+  &:hover,
+  &:focus {
     color: var(--hover-color);
     border: 1px solid var(--hover-color);
   }
+  }
+  
   .our-clients__list .icon {
     fill: currentColor;
   }

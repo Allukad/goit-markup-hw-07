@@ -20,10 +20,11 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
   }
-  .adress__item:not(:last-child) {
-    margin-bottom: 9px;
-  }
+ 
   .adress__map {
     color: #ffffff;
   }
@@ -57,12 +58,13 @@
     border-radius: 50%;
     color: #ffffff;
     transition: color var(--anim-fast), background-color var(--anim-fast);
-  }
-  .foot-social__link:hover,
-  .foot-social__link:focus {
+  &:hover,
+  &:focus {
     color: #ffffff;
     background-color: var(--hover-color);
   }
+  }
+  
   .foot-social__link .icon {
     fill: currentColor;
   }

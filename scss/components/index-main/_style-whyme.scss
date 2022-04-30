@@ -1,14 +1,15 @@
 /* Почему мы */
-.whyme__list {
+.whyme {
     display: flex;
     justify-content: center;
   }
   .whyme__item {
     width: 270px;
+  &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
-  .whyme__item:not(:last-child) {
-    margin-right: 30px;
-  }
+
   .whyme__icon-box {
     width: 270px;
     height: 120px;
@@ -19,7 +20,7 @@
     border-radius: 4px;
     margin-bottom: 30px;
   }
-  .whyme__item-title {
+  .whyme__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
